@@ -17,9 +17,9 @@ class EncoderDecoder(nn.Module):
 		decoder : An instantiation of decoder class - For eg. An RNN for RNN Decoder
 		src_embed : Embedding layer for the source vocabulary
 		tgt_embed : Embedding layer for the target vocabulary
-		generator : 
+		generator : Performs simple linear projection followed by softmax - For eg. Hidden(hi)->soft(Whi)->Output(yi)
 		"""
-		super(EncoderDecoder, self).__init__():
+		super(EncoderDecoder, self).__init__()
 		self.encoder = encoder
 		self.decoder = decoder
 		self.src_embed = src_embed
